@@ -1,0 +1,20 @@
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: web-frontend
+#   namespace: mini-ecommerce
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       app: web-frontend
+#   template:
+#     metadata:
+#       labels:
+#         app: web-frontend
+#     spec:
+#       containers:
+#       - name: web-frontend
+#         image: web-frontend:latest
+#         ports:
+#         - containerPort: 3002

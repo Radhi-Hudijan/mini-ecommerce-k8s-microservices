@@ -9,7 +9,7 @@ logs/
 *.docker
 
 # Kubernetes
-*.yaml
+# *.yaml
 
 # Miscellaneous
 .DS_Store

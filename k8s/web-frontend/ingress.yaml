@@ -1,0 +1,19 @@
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: web-frontend-ingress
+#   namespace: mini-ecommerce
+#   annotations:
+#     nginx.ingress.kubernetes.io/rewrite-target: /
+# spec:
+#   rules:
+#   - host: mini-ecommerce.local
+#     http:
+#       paths:
+#       - path: /
+#         pathType: Prefix
+#         backend:
+#           service:
+#             name: web-frontend
+#             port:
+#               number: 3002
