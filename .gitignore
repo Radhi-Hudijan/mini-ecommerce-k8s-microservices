@@ -1,0 +1,16 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Docker
+*.docker
+
+# Kubernetes
+*.yaml
+
+# Miscellaneous
+.DS_Store
+.env
