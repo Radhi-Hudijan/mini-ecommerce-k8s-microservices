@@ -10,6 +10,7 @@ RUN npm install
 
 # Copy the application code
 COPY src ./src
+COPY public ./public
 
 # Expose the application port
 EXPOSE 3002
