@@ -6,14 +6,14 @@ function App() {
   const [order, setOrder] = useState({ productId: '323', quantity: 1 });
 
   useEffect(() => {
-    axios.get('http://localhost:3000/products')
+    axios.get('http://product-service.mini-shoping.svc.cluster.local:3003/products')
       .then(response => setProducts(response.data))
       .catch(error => console.error('Error fetching products:', error));
   }, []);
 
   const handleOrder = () => {
     console.log('Order payload:', order); // Log the payload for debugging
-    axios.post('http://localhost:3001/orders', order)
+    axios.post('http://order-service.mini-shoping.svc.cluster.local:3001/orders', order)
       .then(response => alert(`Order placed: ${JSON.stringify(response.data)}`))
       .catch(error => console.error('Error placing order:', error));
   };

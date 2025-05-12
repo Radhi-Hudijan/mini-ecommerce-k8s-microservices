@@ -10,4 +10,5 @@ spec:
     - protocol: TCP
       port: 3001
       targetPort: 3001
-      type: clusterIP
+      nodePort: 32001
+  type: NodePort

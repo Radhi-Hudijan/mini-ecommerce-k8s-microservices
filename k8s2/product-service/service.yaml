@@ -5,9 +5,10 @@ metadata:
   namespace: mini-shoping
 spec:
   selector:
-    app: order-service
+    app: product-service
   ports:
     - protocol: TCP
-      port: 3000
-      targetPort: 3000
-      type: clusterIP
+      port: 3003
+      targetPort: 3003
+      nodePort: 32003
+  type: NodePort

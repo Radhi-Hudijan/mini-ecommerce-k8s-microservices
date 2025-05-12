@@ -18,5 +18,6 @@ spec:
       containers:
       - name:  web-frontend
         image: web-frontend:latest
+        imagePullPolicy: Never
         ports:
-        - containerPort: 3002
+        - containerPort: 3000
